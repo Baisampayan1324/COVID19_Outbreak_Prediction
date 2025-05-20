@@ -10,6 +10,31 @@ This project aims to predict COVID-19 outbreaks using machine learning and deep 
 - **Visualization & Analysis:** Generates insightful graphs and trend analyses to interpret model results.
 - **Deployment Readiness:** Enables integration into web or mobile applications for real-time prediction updates.
 
+## Project Structure
+```
+COVID-19-Outbreak-Prediction/
+├── data/                # Contains datasets (CSV, JSON, etc.)
+│   ├── covid.csv        # The main dataset
+│
+├── notebooks/           # Jupyter Notebook (.ipynb) files
+│   ├── covid-19.ipynb   # Updated Jupyter Notebook
+│
+├── src/                 # Python scripts for preprocessing and modeling
+│   ├── preprocessing.py # Data cleaning and feature engineering
+│   ├── modeling.py      # Machine learning and deep learning models
+│
+├── models/              # Trained models (.h5, .pkl, etc.)
+│   ├── covid_lstm_model.h5 # Trained LSTM model
+│
+├── reports/             # Analysis results, images, or logs
+│   ├── analysis.png     # Example visualization
+│
+├── README.md            # Project overview and setup instructions
+├── requirements.txt     # Dependencies
+├── .gitignore           # Ignore unnecessary files
+├── LICENSE              # Open-source license (optional)
+```
+
 ## Installation
 To set up the environment, install the required dependencies:
 ```sh
