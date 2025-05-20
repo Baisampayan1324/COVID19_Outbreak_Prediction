@@ -13,26 +13,35 @@ This project aims to predict COVID-19 outbreaks using machine learning and deep 
 ## Project Structure
 ```
 COVID-19-Outbreak-Prediction/
-├── data/                # Contains datasets (CSV, JSON, etc.)
-│   ├── covid.csv        # The main dataset
+├── data/ # Saved test data
+│ ├── X_test.npy
+│ ├── y_test.npy
 │
-├── notebooks/           # Jupyter Notebook (.ipynb) files
-│   ├── covid-19.ipynb   # Updated Jupyter Notebook
+├── datasets/ # Raw dataset(s)
+│ ├── covid.csv
+│ ├── X_test.npy # (Possibly backup)
+│ ├── y_test.npy
 │
-├── src/                 # Python scripts for preprocessing and modeling
-│   ├── preprocessing.py # Data cleaning and feature engineering
-│   ├── modeling.py      # Machine learning and deep learning models
+├── models/ # Trained models and scalers
+│ ├── covid_lstm_model.h5
+│ ├── my_model.keras
+│ ├── scaler.pkl
 │
-├── models/              # Trained models (.h5, .pkl, etc.)
-│   ├── covid_lstm_model.h5 # Trained LSTM model
+├── notebooks/ # Jupyter Notebooks
+│ ├── covid-19.ipynb
 │
-├── reports/             # Analysis results, images, or logs
-│   ├── analysis.png     # Example visualization
+├── reports/ # Evaluation reports and visualizations
+│ ├── evaluation_metrics.txt
+│ ├── prediction_vs_actual.png
 │
-├── README.md            # Project overview and setup instructions
-├── requirements.txt     # Dependencies
-├── .gitignore           # Ignore unnecessary files
-├── LICENSE              # Open-source license (optional)
+├── src/ # Source code scripts
+│ ├── preprocessing.py # Data loading & preprocessing logic
+│ ├── modeling.py # LSTM model training & saving
+│ ├── generate_analysis.py # Evaluation & result visualization
+│ ├── fix_target_scaler.py # Script to fix scaler on target (once)
+│
+├── README.md # Project documentation
+├── requirements.txt # Python dependencies
 ```
 
 ## Installation
